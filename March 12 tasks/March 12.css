@@ -3,15 +3,14 @@ body{
 }
 #boxing{
     background-color: white;
-    margin: 200px 600px;
+    margin: 200px auto;
     border: 5px;
     width: 260px;
     border-radius: 20px;
-    padding: 20px;
-    padding-bottom: 30px;
+    padding: 25px;
 }
 #Feature{
-    padding-bottom: 5px;
+    padding-bottom: 5px; 
     padding-top: 2px;
  text-align: center;
  width: 70px;
