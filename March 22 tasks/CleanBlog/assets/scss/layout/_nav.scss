@@ -1,0 +1,66 @@
+// navbar start
+header{
+    position: absolute;
+    width: 100%;
+}
+nav{
+    font-family:"Open Sans", sans-serif;
+}
+.nav__general{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px;
+    font-family:"Open Sans", sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+   .header__a{
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    font-size: 12px;
+}
+.start__bootstrap{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+}
+div{
+    a:hover{
+        color: rgb(206, 204, 204);
+    }
+}
+.menu{
+    display: none;
+
+}
+@media only screen and (max-width: 600px) {
+    nav{
+        background-color: white;
+    }
+    .nav__general{
+        margin: 0px 10px 0px 10px;
+    }
+    ul{
+        display: none;
+    }
+.start__bootstrap{
+    color: black;
+}
+    .menu{
+        border: 2px solid grey;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 12px;
+        color: grey;
+        text-decoration: none;
+    }
+}
+// navbar end
