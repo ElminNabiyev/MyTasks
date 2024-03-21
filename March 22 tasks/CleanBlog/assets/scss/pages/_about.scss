@@ -1,0 +1,44 @@
+// about section start
+.about{
+    background:  linear-gradient(to bottom, rgba(30, 29, 29, 0.52), rgba(30, 29, 29, 0.52)), url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/about-bg.jpg");
+    background-size: cover;
+    max-width:100% ;
+    min-height: 500px;
+    background-position: center;
+    background-color: #6c757d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_div{
+    text-align: center;
+    color: white;
+}
+.aboutme{
+    font-size: clamp(3rem, 0.5rem + 8vw, 5rem);
+    font-family:"Open Sans", sans-serif;
+    font-weight: 900;
+}
+.under__about{
+    font-size: 24px;
+    font-family:"Open Sans", sans-serif;
+    font-weight: 100;
+}
+// about section end
+// content section start
+.about_content{
+    margin: 60px auto ;
+    max-width: 700px;
+}
+.contents{
+    margin: 32px 0px;
+    font-family: "Lora", serif;
+    font-size: 20px;
+    color: rgb(27, 27, 27);
+}
+// content section end
+@media only screen and (max-width: 768px) {
+    .contents{
+        margin: 32px 50px;
+    }
+}
