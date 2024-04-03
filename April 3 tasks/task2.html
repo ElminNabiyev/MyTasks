@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task 2
+        console.log("task2");
+         var arr = [    { urunAdi: "Beyaz Ekmek", fiyat: 2.5, stok: 100, kategori: "Ekmek" },
+    { urunAdi: "Süt", fiyat: 3.75, stok: 50, kategori: "Süt ve Süt Ürünleri" },
+    { urunAdi: "Domates", fiyat: 2.0, stok: 80, kategori: "Meyve ve Sebzeler" },
+    { urunAdi: "Salatalık", fiyat: 1.5, stok: 60, kategori: "Meyve ve Sebzeler" },
+    { urunAdi: "Tavuk Göğsü", fiyat: 15.0, stok: 30, kategori: "Et ve Et Ürünleri" },
+    { urunAdi: "Muz", fiyat: 4.0, stok: 40, kategori: "Meyve ve Sebzeler" },
+    { urunAdi: "Ton Balığı", fiyat: 10.0, stok: 20, kategori: "Konserve ve Hazır Yiyecekler" },
+    { urunAdi: "Soda", fiyat: 1.25, stok: 100, kategori: "İçecekler" },
+    { urunAdi: "Yoğurt", fiyat: 2.25, stok: 40, kategori: "Süt ve Süt Ürünleri" },
+    { urunAdi: "Çikolata", fiyat: 3.0, stok: 60, kategori: "Şekerleme" }
+];
+function findDeyer(deyer) {
+    const arr2=[]
+    for (let i = 0; i < arr.length; i++) {
+        if(deyer<arr[i].stok){
+            arr2.push(arr[i].stok)
+        }      
+    }
+    return arr2
+}
+console.log(findDeyer(50));
+// task 3
+console.log("task3");
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i].kategori==="Meyve ve Sebzeler"){
+            console.log(arr[i].urunAdi);
+        }
+    }
+// task 4
+console.log("task4");
+for (let i = 0; i < arr.length; i++) {
+        if(arr[i].kategori==="Meyve ve Sebzeler" && arr[i].stok>2){
+            console.log(arr[i].urunAdi);
+        }
+    }
+    // task 5
+console.log("task5");
+function findGoods(ad) {
+    for (let i = 0; i < arr.length; i++) {
+    if (arr[i].urunAdi===ad) {
+        return true
+    }        
+    }
+    return false
+}
+console.log(findGoods("Süt"));
+  // task 6
+  console.log("task6");
+  function findIndexByUrunAdi(arr, search) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].urunAdi === search) {
+            return i;
+        }
+    }
+    return -1;
+}
+let index = findIndexByUrunAdi(arr, "Ton Balığı");
+console.log(" 'Ton Balığı'Indexi:", index);
+    </script>
+</body>
+</html>

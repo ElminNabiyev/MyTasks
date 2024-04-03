@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [23, 1, 5, 3, 12, 4, 9, 81, 7, 11, 22, 31, 6];
+        let maxCut = null;
+        let minTek = null;
+        let maxCutIndex = null;
+        let minTekIndex = null;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 === 0) {
+                if (maxCut === null || arr[i] > maxCut) {
+                    maxCut = arr[i];
+                    maxCutIndex = i;
+                }
+            } else {
+                if (minTek === null || arr[i] < minTek) {
+                    minTek = arr[i];
+                    minTekIndex = i;
+                }
+            }
+        }
+        if (maxCutIndex !== null && minTekIndex !== null) {
+            let temp = arr[maxCutIndex];
+            arr[maxCutIndex] = arr[minTekIndex];
+            arr[minTekIndex] = temp;
+        }
+        console.log(arr);
+    </script>
+</body>
+
+</html>
