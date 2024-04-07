@@ -5,22 +5,26 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 img {
-  width: 150px;
   height: 150px;
   border-radius: 50%;
 }
 button {
-  background-color: red;
+  background-color: transparent;
+  border: 1px solid red;
   border-radius: 0.5em;
   color: white;
   font-size: 25px;
   padding: 20px 40px;
-  border: 0px;
   cursor: pointer;
+  transition: 200ms;
+  margin-bottom: 20px;
 }
 .general {
   border: 1px solid white;
   border-radius: 5rem;
   width: 80%;
   margin: 47px auto;
+}
+button:hover{
+  background-color: red;
 }
