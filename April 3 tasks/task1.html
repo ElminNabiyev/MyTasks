@@ -16,7 +16,7 @@
         let minTekIndex = null;
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] % 2 === 0) {
-                if (maxCut === null || arr[i] > maxCut) {
+                if (maxCut === null || arr[i] > maxCut && arr[i] % 2 === 0) {
                     maxCut = arr[i];
                     maxCutIndex = i;
                 }
@@ -29,7 +29,6 @@
         }
         if (maxCutIndex !== null && minTekIndex !== null) {
             let temp = arr[maxCutIndex];
-            arr[maxCutIndex] = arr[minTekIndex];
             arr[minTekIndex] = temp;
         }
         console.log(arr);
