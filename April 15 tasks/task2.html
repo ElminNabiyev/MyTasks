@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <input type="text">
+    <script>
+        const inp=document.querySelector("input")
+        const local=localStorage.getItem("inp")
+        local?inp.value=local:null
+        inp.addEventListener("keyup",function () {
+            localStorage.setItem("inp",inp.value)
+        })
+    </script>
+</body>
+</html>
