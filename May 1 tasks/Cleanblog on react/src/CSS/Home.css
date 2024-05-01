@@ -1,0 +1,77 @@
+.hero{
+    background:  linear-gradient(to bottom, rgba(30, 29, 29, 0.52), rgba(30, 29, 29, 0.52)), url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg");
+    background-size: cover;
+    max-width:100% ;
+    min-height: 500px;
+    background-position: center;
+    background-color: #6c757d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_div{
+    text-align: center;
+    color: white;
+}
+.cleanblog{
+    font-size: clamp(3rem, 0.5rem + 8vw, 5rem);
+    font-family:"Open Sans", sans-serif;
+    font-weight: 900;
+}
+.under__blog{
+    font-size: 24px;
+    font-family:"Open Sans", sans-serif;
+}
+.general__content__item{
+    margin: 60px auto ;
+    max-width: 600px;
+}
+.man{   
+    font-size: clamp(1.875rem, 1.7188rem + 0.5vw, 2rem);
+    font-family:"Open Sans", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+}
+.man:hover,.underman:hover,.bootstrap:hover{
+    color: rgb(7, 94, 160)
+}
+.underman{
+    font-size: clamp(1.6875rem, 2rem + -1vw, 1.4375rem);
+    color: #212529;
+    font-weight: 100;
+}
+.posted{
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: "Lora", serif;
+    color: #6c757d;
+    font-style: italic;
+}
+.bootstrap{
+    text-decoration: none;
+    color: black;
+}
+hr{
+    margin: 24px 0px;
+    color: #dee2e6;
+}
+.general__content__button{
+    margin: 60px auto ;
+    max-width: 600px;
+    display: flex;
+    justify-content: end;
+}
+.older__posts{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #0085A1;
+    background-color: #0085A1;
+    padding: 16px 28px;
+    font-family:"Open Sans", sans-serif;
+    font-weight: 1000;
+}
+.older__posts:hover{
+    background-color: #04677a;
+    transition: 200ms;
+}
